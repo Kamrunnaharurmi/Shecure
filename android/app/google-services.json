@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "222801042680",
+    "project_id": "shecure-ab9f8",
+    "storage_bucket": "shecure-ab9f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222801042680:android:bf59f2fe3e22b38b8a2f0d",
+        "android_client_info": {
+          "package_name": "com.example.shecure"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf5e8ppsGLJ366kUgCHfC-0Bt5vto0z9k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
