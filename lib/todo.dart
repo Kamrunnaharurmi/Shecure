@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'des.dart';
-import 'home.dart';
+import 'bottom.dart';
 import 'task.dart';
 import 'package:intl/intl.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -68,7 +68,7 @@ class todoState extends State<todo> {
             leading: IconButton(
               onPressed: () {
                 Navigator.pushReplacement(
-                    context, MaterialPageRoute(builder: (context) => home()));
+                    context, MaterialPageRoute(builder: (context) => bottom()));
               },
               icon: Icon(Icons.arrow_back_ios, color: Colors.white),
             ),
