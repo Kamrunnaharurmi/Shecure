@@ -75,7 +75,7 @@ class rule11State extends State<rule11> {
                       SizedBox(
                         height: 5,
                       ),
-                      Row(
+                      Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           ElevatedButton(
