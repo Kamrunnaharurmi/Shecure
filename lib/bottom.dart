@@ -13,7 +13,6 @@ class bottom extends StatefulWidget {
 }
 
 class bottomState extends State<bottom> {
-
   int myIndex = 0;
   final pages = [home(), safety(), escape(), defence(), msgfamily()];
 
