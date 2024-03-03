@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home.dart';
+import 'bottom.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -25,7 +25,6 @@ class emergencyState extends State<emergency> {
           child: Scaffold(
               backgroundColor: Colors.transparent,
               appBar: AppBar(
-                elevation: 0.0,
                 backgroundColor: Colors.pink,
                 centerTitle: true,
                 title: Text('HelpLines',
@@ -39,7 +38,7 @@ class emergencyState extends State<emergency> {
                     Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => home()));
+                            builder: (context) => bottom()));
                   },
                   icon:Icon(Icons.arrow_back_ios,color: Colors.white),
                 ),
