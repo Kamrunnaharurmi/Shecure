@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:contacts_service/contacts_service.dart';
 import 'package:geolocator/geolocator.dart';
+import 'package:shecure/bottom.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:shake/shake.dart';
 import 'home.dart';
@@ -73,7 +74,7 @@ class _SendState extends State<Send> {
               onPressed: () {
                 Navigator.pushReplacement(
                   context,
-                  MaterialPageRoute(builder: (context) => home()),
+                  MaterialPageRoute(builder: (context) => bottom()),
                 );
               },
               icon: Icon(Icons.arrow_back_ios, color: Colors.white),
