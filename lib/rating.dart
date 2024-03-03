@@ -30,15 +30,13 @@ class ratingState extends State<rating> {
               ),
             ),
             leading: IconButton(
-              onPressed: () {
+              onPressed: (){
                 Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => bottom(),
-                  ),
-                );
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => bottom()));
               },
-              icon: const Icon(Icons.arrow_back_ios),
+              icon:Icon(Icons.arrow_back_ios,color: Colors.white),
             ),
           ),
           body: Container(
@@ -59,7 +57,7 @@ class ratingState extends State<rating> {
                     allowHalfRating: true,
                     itemCount: 5,
                     itemSize: 40.0,
-                    itemBuilder: (context, _) => const Icon(
+                    itemBuilder: (context, _) =>  Icon(
                       Icons.star,
                       color: Colors.pink,
                     ),
