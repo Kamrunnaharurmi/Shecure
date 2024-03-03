@@ -100,7 +100,6 @@ class child_registerState extends State<child_register> {
         child: Scaffold(
           backgroundColor: Colors.transparent,
           appBar: AppBar(
-            elevation: 0.0,
             backgroundColor: Colors.pink,
             centerTitle: true,
             title: Text(
@@ -252,6 +251,7 @@ class child_registerState extends State<child_register> {
                                 Icon(Icons.email, color: Colors.pink, size: 20),
                           ),
                         ),
+
                         SizedBox(height: 5),
                         TextFormField(
                           controller: passwordController,
