@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shecure/bottom.dart';
 import 'package:shecure/profile.dart';
 import 'package:shecure/send.dart';
 import 'about.dart';
@@ -14,27 +15,14 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'todo.dart';
 
-class home extends StatelessWidget {
-  const home({Key? key}) : super(key: key);
+class home extends StatefulWidget {
+  const home({super.key});
+
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(primarySwatch: Colors.pink),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
+  State<home> createState() => homeState();
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
-  final String title;
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
+class homeState extends State<home> {
   List imagelist = [
     {"id": 1, "image_path": 'images/image11.jpg'},
     {"id": 2, "image_path": 'images/image12.jpg'},
@@ -126,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     onTap: () {
                       Navigator.pop(context);
                       Navigator.pushReplacement(context,
-                          MaterialPageRoute(builder: (context) => home()));
+                          MaterialPageRoute(builder: (context) => bottom()));
                     },
                   ),
                   ListTile(
@@ -202,6 +190,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   );
                 },
               ),
+
               backgroundColor: Colors.pink,
               centerTitle: true,
               title: Text('~~ Shecure ~~',
