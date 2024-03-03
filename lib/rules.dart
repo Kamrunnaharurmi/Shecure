@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home.dart';
+import 'package:shecure/bottom.dart';
 import 'rule1.dart';
 import 'rule2.dart';
 import 'rule3.dart';
@@ -63,7 +63,7 @@ class rulesState extends State<rules> {
                   Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => home()));
+                          builder: (context) => bottom()));
                 },
                 icon:Icon(Icons.arrow_back_ios,color: Colors.white),
 
