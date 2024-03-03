@@ -37,7 +37,6 @@ class child_logState extends State<child_log> {
         child: Scaffold(
           backgroundColor: Colors.transparent,
           appBar: AppBar(
-            elevation: 0.0,
             backgroundColor: Colors.pink,
             centerTitle: true,
             title: Text(
@@ -131,7 +130,6 @@ class child_logState extends State<child_log> {
                             }
                           },
                         ),
-
                         SizedBox(
                           height:5,
                         ),
