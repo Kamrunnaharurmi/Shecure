@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home.dart';
+import 'bottom.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class credit extends StatefulWidget {
@@ -36,7 +36,6 @@ class creditState extends State<credit> {
                   width: 15,
                 ),
               ],
-              elevation: 0.0,
               backgroundColor: Colors.pink,
               centerTitle: true,
               title: Text('Credits',
@@ -50,7 +49,7 @@ class creditState extends State<credit> {
                   Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => home()));
+                          builder: (context) => bottom()));
                 },
                 icon:Icon(Icons.arrow_back_ios,color: Colors.white),
               ),
